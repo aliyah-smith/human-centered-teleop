@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Towards Accessible Robot Control: Comparing Kinesthetic Teaching, SpaceMouse Teleoperation, and a Mixed Reality Interface">
+  <meta name="keywords" content="Teleoperation, Human-centered design, Human-Robot Interaction, Mixed Reality">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towards Accessible Robot Control: Comparing Kinesthetic Teaching, SpaceMouse Teleoperation, and a Mixed Reality Interface</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://aliyah-smith.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://aliyah-smith.github.io/audio-augmented-reality">
+            Audio Augmented Reality
+          </a>
+          <a class="navbar-item" href="https://aliyah-smith.github.io/human-centered-teleop">
+            Human-Centered Teleoperation
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Towards Accessible Robot Control: Comparing Kinesthetic Teaching, SpaceMouse Teleoperation, and a Mixed Reality Interface</h1>
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://aliyah-smith.github.io">Aliyah Smith</a> and </span>
+            <span class="author-block">
+              <a href="https://monroekennedy3.com/">Monroe Kennedy III</a></span>
+          </div>
+
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">Stanford University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2511.15956"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2511.15956"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://youtu.be/cS0-iCbRCsg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/preview.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        This website gives an overview of our paper, which conducts an in-depth analysis of three robot control approaches: Kinesthetic Teaching, SpaceMouse Teleoperation, and Teleoperation 
+        using a Mixed Reality interface. The insights from this study inform the design of more accessible and user-friendly robot teleoperation systems.
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/cS0-iCbRCsg?si=X9GojxuGBylNqX7D"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- Recruitment -->
+      <div class="column">
+        <h2 class="title is-3">Participant Recruitment</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Twenty-five participants were recruited under IRB protocol 65022. 
+              Informed consent was obtained prior to participation, 
+              and each session lasted approximately 2 hours. 
+              Participant demographics are summarized below. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Demographics-->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <!-- <div class="container"> -->
+    <!-- <div id="results-carousel" class="carousel results-carousel">
+      <div class="item item-gender">
+        <img src="./static/images/gender_distribution.png"
+            class="demographics-image"
+            alt="Gender distribution."/>
+      </div>
+      <div class="item item-experience">
+        <img src="./static/images/experience_likert.png"
+            class="demographics-image"
+            alt="Experience with robots."/>
+      </div>
+      <div class="item item-comfort">
+        <img src="./static/images/comfort_likert.png"
+            class="demographics-image"
+            alt="Comfort with robots."/>
+      </div>
+      <div class="item item-trust">
+        <img src="./static/images/trust_likert.png"
+            class="demographics-image"
+            alt="Trust in robots."/>
+      </div>
+      <div class="item item-music">
+        <img src="./static/images/musical_experience.png"
+            class="demographics-image"
+            alt="Music or sound experience."/>
+      </div>
+      <div class="item item-age">
+        <img src="./static/images/age_distribution.png"
+            class="demographics-image"
+            alt="Age distribution."/>
+      </div> -->
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
+<!--/ Demographics-->
+
+<!-- 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiment C: Exploring Functional Sounds in Human-Robot Collaboration </h2>
+        <h3 class="title is-4">Hypotheses</h3>
+        <div class="content has-text-justified">
+          <p>
+            <strong>H4:</strong> Adding functional sound will increase participants'
+            feelings of competence and reduce participants' feelings of
+            discomfort compared to consequential sounds alone.
+          </p>
+          <p>
+            <strong>H5:</strong> Adding spatial sound will increase participants' feelings
+            of warmth and competence, and reduce participants' feelings
+            of discomfort compared to consequential sounds alone.
+          </p>
+          <p>
+            <strong>H6:</strong> Participants will accurately interpret the intended meaning 
+            of the functional sounds presented.
+          </p>
+        </div>
+
+        <h3 class="title is-4">Experimental Design</h3>
+        <div class="content has-text-justified">
+          <p>
+            Participants were tasked with completing a Lego structure over the course
+            of three trials, with the robot assisting by providing additional
+            Lego pieces as needed. Each trial was conducted under a distinct sound condition: 
+            Consequential, Functional, or Spatial.
+          </p>
+
+        </div>
+        <div class="video-row">
+          <video controls autoplay muted loop>
+            <source src="./static/videos/consequential_compressed.mp4" type="video/mp4">
+          </video>
+
+          <video controls autoplay muted loop>
+            <source src="./static/videos/functional_compressed.mp4" type="video/mp4">
+          </video>
+
+          <video controls autoplay muted loop>
+            <source src="./static/videos/spatial_compressed.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class ="column has-text-justified">
+          <p class="is-bold">Videos demonstrating the three sound conditions used in Experiment C:
+            Consequential (left), Functional (center), and Spatial (right). Note: During the experiment, 
+            the music in the Spatial condition was played from the AR headset and spatialized.  </p>
+        </div>
+
+        <h3 class="title is-4">Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            Participants completed the Robot Social Attribute Scale (RoSAS) after each trial and completed a custom
+            survey at the end of the experiment. The RoSAS is a validated tool for 
+            assessing social perceptions of robots across three dimensions: Warmth, Competence, and Discomfort.
+          </p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="./static/images/part_3_rosas_box_whisker_excl_means.png"
+                class="part3-results-image"
+                alt="Part 3 results image."/>
+          <p class="is-bold">Box-and-whisker plots illustrating participant responses across the three experimental 
+            conditions and three attribute scales in Experiment C. Statistical significance from 
+            exploratory paired comparisons is indicated by asterisks above brackets (*corresponds to p &lt; 0.05). (N = 41)</p>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+
+          </p>
+        </div>
+        <div class="column has-text-justified">
+          </p>
+            The following images summarize additional results from Experiment C:
+          </p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="./static/images/part_3_likert_stacked_bar.png"
+                class="part3-results-image"
+                alt="Part 3 results image."/>
+          <p class="is-bold">Distribution of responses to the Likert-scale questions for the augmented sound conditions.</p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="./static/images/part_3_table.PNG"
+                class="part3-results-image"
+                alt="Part 3 results image."/>
+          <p class="is-bold">Summary of participants' predicted functions for the two augmented sound conditions.</p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="./static/images/part_3_sound_condition_preferences.png"
+                class="part3-results-image"
+                alt="Part 3 results image."/>
+          <p class="is-bold">Participants' preferred sound condition.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section> -->
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Additional Results </h2>
+        <h3 class="title is-4">Design Implications</h3>
+        <div class="content has-text-justified">
+          <p>
+           Additional data were collected to inform future sound design for human-robot interaction.
+          </p>
+        </div>
+        <div class="column has-text-centered">
+          <img src="./static/images/part4_importance_heatmap_combined_ordered.png"
+                class="part4-methods-image"
+                alt="Part 4 methods image."/>
+          <p class="is-bold">Heatmaps depicting participants' ratings of the importance of communicating four 
+            distinct categories of information through sound. The left panel shows overall ratings across all 
+            participants, the middle panel shows ratings from participants reporting low experience with robots, 
+            and the right panel shows ratings from participants reporting high experience with robots. (N = 41) </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+
+    </code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website uses the Nerfies <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
