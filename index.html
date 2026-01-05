@@ -73,7 +73,7 @@
             <span class="author-block">
               <a href="https://aliyah-smith.github.io">Aliyah Smith</a> and </span>
             <span class="author-block">
-              <a href="https://monroekennedy3.com/">Monroe Kennedy III</a></span>
+              <a href="https://scholar.google.com/citations?user=x2ZPRfoAAAAJ&hl=en&oi=ao">Monroe Kennedy III</a></span>
           </div>
 
           <div class="is-size-4 publication-authors">
@@ -83,8 +83,8 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2511.15956"
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2409.18394"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -93,24 +93,24 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2511.15956"
+                <a href="https://arxiv.org/abs/2409.18394"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span> -->
+              </span>
               <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://youtu.be/cS0-iCbRCsg"
+              <span class="link-block">
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
                   <span>Video</span>
                 </a>
-              </span> -->
+              </span>
             </div>
 
           </div>
@@ -137,12 +137,47 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="video-row">
+          <video controls autoplay muted loop>
+            <source src="./static/videos/consequential_compressed.mp4" type="video/mp4">
+          </video>
+
+          <video controls autoplay muted loop>
+            <source src="./static/videos/functional_compressed.mp4" type="video/mp4">
+          </video>
+
+          <video controls autoplay muted loop>
+            <source src="./static/videos/spatial_compressed.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class ="column has-text-justified">
+          <p class="is-bold">Videos demonstrating the three robot control approaches:
+            Kinesthetic Teaching, SpaceMouse Teleoperation, and a Mixed Reality Teleoperation Interface.  </p>
+        </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
+            Teleoperation interfaces are increasingly important for enabling intuitive and effective human-robot interaction, yet their performance
+            relative to direct manipulation methods remains underexplored. In this study, we compared two teleoperation approaches—SpaceMouse
+            Teleoperation and a Mixed Reality interface—to a widely used non-teleoperation method, Kinesthetic Teaching. All three approaches
+            were evaluated in a comprehensive user study involving two robotic platforms and six complex manipulation tasks. Quantitative
+            results show that Kinesthetic Teaching outperforms both teleoperation methods, yielding faster task completion times and higher
+            success rates for both novice and expert users. The SpaceMouse and MR interfaces performed comparably, with significant differences
+            in task completion observed for only two tasks, and success rates declining as task complexity increased. Qualitative analysis reflected
+            these trends, highlighting differences in Physical Demand and identifying interface attributes that influence users’ ability to perform,
+            learn, and understand. This study quantifies the limitations of current teleoperation methods and incorporates subjective feedback
+            from 25 participants. The results highlight the critical need to design and rigorously evaluate teleoperation systems for non-expert
+            users, particularly in contexts where autonomous robots are deployed in personal or everyday environments, to ensure usability,
+            efficiency, and accessibility.
           </p>
         </div>
       </div>
@@ -210,8 +245,9 @@
               <p>
               Twenty-five participants were recruited under IRB protocol 65022. 
               Informed consent was obtained prior to participation, 
-              and each session lasted approximately 2 hours. 
-              Participant demographics are summarized below for Group 1 (n=15) and Group 2 (n=10).
+              and each session lasted approximately 2 hours. Prior to the experiment, participants were assigned to one of two groups.
+              Group 1 controlled the Kinova Gen3 manipulator on one set of tasks, while Group 2 controlled the UFactory xARM 7
+              DOF manipulator on a different set of tasks. Participant demographics are summarized below for Group 1 (n=15) and Group 2 (n=10).
             </p>
             </p>
           </div>
@@ -281,7 +317,21 @@
         <div class="content has-text-justified">
           <p>
             Participants completed tasks faster and more successfully using Kinesthetic Teaching
-            compared to SpaceMouse and Mixed Reality Teleoperation.
+            compared to SpaceMouse and Mixed Reality Teleoperation. Although overall trends indicate that
+            participants generally completed tasks more quickly using the SpaceMouse compared to the Mixed Reality Interface,
+            statistically significant differences were observed only for the PEG-in-HOLE and RING-on-PEG tasks.
+          </p>
+          <p>
+            Participants using the SpaceMouse experienced substantial difficulty in tasks
+            requiring extensive rotation or navigation through constrained workspaces (RING-on-PEG and BOOKSHELF). While
+            many participants were able to partially complete most tasks, the proportion of partial to complete successes increased
+            markedly as task complexity and the number of required steps grew. Similar patterns were observed for the Mixed
+            Reality interface; however, this method resulted in a greater number of failed trials for most tasks, leading to more
+            overall attempts and generally fewer fully successful completions 
+          </p>
+          <p>
+            These findings highlight the challenges associated with teleoperation methods, particularly for complex tasks,
+            and underscore the need for improved interface designs to enhance user performance and success rates.
           </p>
         </div>
 
@@ -291,7 +341,7 @@
                  class="time"
                  alt="Task completion time.">
             <p class="is-bold">
-              Task completion times across conditions. n=15 for short-horizon tasks and n=10 for long-horizon tasks.
+              Task completion times across conditions. 
             </p>
           </div>
 
@@ -300,7 +350,7 @@
                  class="time"
                  alt="Success counts.">
             <p class="is-bold">
-              Success counts across conditions. n=15 for short-horizon tasks and n=10 for long-horizon tasks.
+              Success counts across conditions. 
             </p>
           </div>
         </div>
@@ -308,16 +358,22 @@
         <!-- ================= System Usability ================= -->
         <h3 class="title is-4">System Usability</h3>
         <div class="content has-text-justified">
-          <p>To-do.</p>
+          <p>We report the SUS results both by group and across the entire participant population (Figure 9). Interestingly, no
+            statistically significant differences were observed among the three methods for participants in Group 2, although trends
+            suggest that these participants perceived the SpaceMouse as the most usable overall in the two long-horizon tasks.
+            For Group 1, no statistically significant differences emerged between the two teleoperation methods; however, several
+            individual SUS items showed significant differences favoring the Kinesthetic approach over the other two methods.</p>
         </div>
 
         <div class="columns is-centered">
           <div class = "content has-text-centered mb-6">
-            <img src="./static/images/sus_groups.png"
+            <img src="./static/images/sus.png"
                  class="sus"
                  alt="SUS.">
             <p class="is-bold">
-              System Usability Scale (SUS) for Group 1 (n=15) and Group 2 (n=10).
+              Box plots of SUS scores. Boxes show the 25th–75th percentiles, with the median indicated by a gray line and the mean by a
+              diamond. Whiskers extend to 1.5× the interquartile range, and outliers are shown as unfilled circles. Brackets indicate statistically
+              significant differences, with asterisks marking significance levels: p < 0.05 (*), p < 0.01 (**), and p < 0.001 (***).
             </p>
           </div>
         </div>
@@ -330,25 +386,16 @@
 
         <div class="has-text-centered">
           <div class="mb-6">
-            <img src="./static/images/nasa_group1.svg"
+            <img src="./static/images/nasa.png"
                 class="nasa"
                 alt="NASA TLX for group 1.">
             <p class="is-bold">
-              NASA Task Load Index (NASA TLX) for group 1 (n=15).
+              Box plots of NASA TLX results. Lower scores are favorable across all measures. Asterisks denote statistical significance from
+              post-hoc comparisons for Condition.
             </p>
           </div>
 
-          <div>
-            <img src="./static/images/nasa_group2.svg"
-                class="nasa"
-                alt="NASA TLX for group 2.">
-            <p class="is-bold">
-              NASA Task Load Index (NASA TLX) for group 2 (n=10).
-            </p>
-          </div>
         </div>
-
-      </div>
     </div>
   </div>
 </section>
@@ -362,12 +409,16 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              To do.
+              As noted previously, the majority of participants in this study were non-experts; however, a subset of participants
+              possessed prior expertise in specific experience categories, enabling limited comparisons between expert and non-expert
+              performance. Below are visualizations of task completion time based on participants' prior experience with robot manipulation,
+              SpaceMouse devices, video games, and VR/AR technologies.
             </p>
           </div>
         </div>
         <h2 class="title is-4">Time by Experience</h2>
       </div>
+      
     </div>
   </div>
 </section>
@@ -435,242 +486,31 @@
     <div class="columns is-centered">
       <!-- Additional Results -->
       <div class="column">
-        <h2 class="title is-4">System Usability by Experience</h2>
+        <h2 class="title is-4">Advantages of Each Control Method (Thematic Analysis)</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              In the post-experiment questionnaire, participants were asked to describe the advantages of each method relative to the other two.
+              The table below presents a thematic analysis of these responses.
+            </p>
+          </div>
+        </div>
+        <div class="has-text-centered">
+          <div class="mb-6">
+            <img src="./static/images/thematic_analysis.PNG"
+                class="nasa"
+                alt="Thematic analysis of advantages of each control method."/>
+            <p class="is-bold">
+              Thematic analysis of participant responses regarding the advantages of each control method.
+            </p>
+          </div>
+        
       </div>
+      
     </div>
   </div>
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <!-- <div class="container"> -->
-    <div id="results-carousel" class="carousel results-carousel">
-      <div class="item item-gender">
-        <img src="./static/images/group1/sus_by_Manipulation.png"
-            class="demographics-image"
-            alt="Gender distribution."/>
-      </div>
-      <div class="item item-experience">
-        <img src="./static/images/group1/sus_by_SpaceMouse.png"
-            class="demographics-image"
-            alt="Experience with robots."/>
-      </div>
-      <div class="item item-comfort">
-        <img src="./static/images/group1/sus_by_Video Games.png"
-            class="demographics-image"
-            alt="Comfort with robots."/>
-      </div>
-      <div class="item item-trust">
-        <img src="./static/images/group1/sus_by_VR_AR.png"
-            class="demographics-image"
-            alt="Trust in robots."/>
-      </div>
-      <!-- </div> -->
-    </div>
-  </div>
-</section>
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <!-- <div class="container"> -->
-    <div id="results-carousel" class="carousel results-carousel">
-      <div class="item item-gender">
-        <img src="./static/images/group2/sus_by_Manipulation.png"
-            class="demographics-image"
-            alt="Gender distribution."/>
-      </div>
-      <div class="item item-experience">
-        <img src="./static/images/group2/sus_by_SpaceMouse.png"
-            class="demographics-image"
-            alt="Experience with robots."/>
-      </div>
-      <div class="item item-comfort">
-        <img src="./static/images/group2/sus_by_Video Games.png"
-            class="demographics-image"
-            alt="Comfort with robots."/>
-      </div>
-      <div class="item item-trust">
-        <img src="./static/images/group2/sus_by_VR_AR.png"
-            class="demographics-image"
-            alt="Trust in robots."/>
-      </div>
-      <!-- </div> -->
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <!-- Additional Results -->
-      <div class="column">
-        <h2 class="title is-4">Task Load by Experience</h2>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <!-- <div class="container"> -->
-    <div id="results-carousel" class="carousel results-carousel">
-      <div class="item item-gender">
-        <img src="./static/images/group1/nasa_by_Manipulation.png"
-            class="demographics-image"
-            alt="Gender distribution."/>
-      </div>
-      <div class="item item-experience">
-        <img src="./static/images/group1/nasa_by_SpaceMouse.png"
-            class="demographics-image"
-            alt="Experience with robots."/>
-      </div>
-      <div class="item item-comfort">
-        <img src="./static/images/group1/nasa_by_Video Games.png"
-            class="demographics-image"
-            alt="Comfort with robots."/>
-      </div>
-      <div class="item item-trust">
-        <img src="./static/images/group1/nasa_by_VR_AR.png"
-            class="demographics-image"
-            alt="Trust in robots."/>
-      </div>
-      <!-- </div> -->
-    </div>
-  </div>
-</section>
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <!-- <div class="container"> -->
-    <div id="results-carousel" class="carousel results-carousel">
-      <div class="item item-gender">
-        <img src="./static/images/group2/nasa_by_Manipulation.png"
-            class="demographics-image"
-            alt="Gender distribution."/>
-      </div>
-      <div class="item item-experience">
-        <img src="./static/images/group2/nasa_by_SpaceMouse.png"
-            class="demographics-image"
-            alt="Experience with robots."/>
-      </div>
-      <div class="item item-comfort">
-        <img src="./static/images/group2/nasa_by_Video Games.png"
-            class="demographics-image"
-            alt="Comfort with robots."/>
-      </div>
-      <div class="item item-trust">
-        <img src="./static/images/group2/nasa_by_VR_AR.png"
-            class="demographics-image"
-            alt="Trust in robots."/>
-      </div>
-      <!-- </div> -->
-    </div>
-  </div>
-</section>
-
-<!-- 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Experiment C: Exploring Functional Sounds in Human-Robot Collaboration </h2>
-        <h3 class="title is-4">Hypotheses</h3>
-        <div class="content has-text-justified">
-          <p>
-            <strong>H4:</strong> Adding functional sound will increase participants'
-            feelings of competence and reduce participants' feelings of
-            discomfort compared to consequential sounds alone.
-          </p>
-          <p>
-            <strong>H5:</strong> Adding spatial sound will increase participants' feelings
-            of warmth and competence, and reduce participants' feelings
-            of discomfort compared to consequential sounds alone.
-          </p>
-          <p>
-            <strong>H6:</strong> Participants will accurately interpret the intended meaning 
-            of the functional sounds presented.
-          </p>
-        </div>
-
-        <h3 class="title is-4">Experimental Design</h3>
-        <div class="content has-text-justified">
-          <p>
-            Participants were tasked with completing a Lego structure over the course
-            of three trials, with the robot assisting by providing additional
-            Lego pieces as needed. Each trial was conducted under a distinct sound condition: 
-            Consequential, Functional, or Spatial.
-          </p>
-
-        </div>
-        <div class="video-row">
-          <video controls autoplay muted loop>
-            <source src="./static/videos/consequential_compressed.mp4" type="video/mp4">
-          </video>
-
-          <video controls autoplay muted loop>
-            <source src="./static/videos/functional_compressed.mp4" type="video/mp4">
-          </video>
-
-          <video controls autoplay muted loop>
-            <source src="./static/videos/spatial_compressed.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class ="column has-text-justified">
-          <p class="is-bold">Videos demonstrating the three sound conditions used in Experiment C:
-            Consequential (left), Functional (center), and Spatial (right). Note: During the experiment, 
-            the music in the Spatial condition was played from the AR headset and spatialized.  </p>
-        </div>
-
-        <h3 class="title is-4">Results</h3>
-        <div class="content has-text-justified">
-          <p>
-            Participants completed the Robot Social Attribute Scale (RoSAS) after each trial and completed a custom
-            survey at the end of the experiment. The RoSAS is a validated tool for 
-            assessing social perceptions of robots across three dimensions: Warmth, Competence, and Discomfort.
-          </p>
-        </div>
-        <div class="column has-text-centered">
-          <img src="./static/images/part_3_rosas_box_whisker_excl_means.png"
-                class="part3-results-image"
-                alt="Part 3 results image."/>
-          <p class="is-bold">Box-and-whisker plots illustrating participant responses across the three experimental 
-            conditions and three attribute scales in Experiment C. Statistical significance from 
-            exploratory paired comparisons is indicated by asterisks above brackets (*corresponds to p &lt; 0.05). (N = 41)</p>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-
-          </p>
-        </div>
-        <div class="column has-text-justified">
-          </p>
-            The following images summarize additional results from Experiment C:
-          </p>
-        </div>
-        <div class="column has-text-centered">
-          <img src="./static/images/part_3_likert_stacked_bar.png"
-                class="part3-results-image"
-                alt="Part 3 results image."/>
-          <p class="is-bold">Distribution of responses to the Likert-scale questions for the augmented sound conditions.</p>
-        </div>
-        <div class="column has-text-centered">
-          <img src="./static/images/part_3_table.PNG"
-                class="part3-results-image"
-                alt="Part 3 results image."/>
-          <p class="is-bold">Summary of participants' predicted functions for the two augmented sound conditions.</p>
-        </div>
-        <div class="column has-text-centered">
-          <img src="./static/images/part_3_sound_condition_preferences.png"
-                class="part3-results-image"
-                alt="Part 3 results image."/>
-          <p class="is-bold">Participants' preferred sound condition.</p>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section> -->
 
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
