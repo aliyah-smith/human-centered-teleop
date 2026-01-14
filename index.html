@@ -141,21 +141,25 @@
       <div class="column is-full-width">
         <div class="video-row">
           <video controls autoplay muted loop>
+            <source src="./static/videos/mixedreality_compressed.mp4" type="video/mp4">
+          </video>
+
+          <video controls autoplay muted loop>
             <source src="./static/videos/kinesthetic_compressed.mp4" type="video/mp4">
           </video>
 
           <video controls autoplay muted loop>
             <source src="./static/videos/spacemouse_compressed.mp4" type="video/mp4">
           </video>
-
-          <video controls autoplay muted loop>
-            <source src="./static/videos/mixedreality_compressed.mp4" type="video/mp4">
-          </video>
+          
         </div>
-        <div class ="column has-text-justified">
-          <p class="is-bold">Videos demonstrating the three robot control approaches:
-            Kinesthetic Teaching, SpaceMouse Teleoperation, and a Mixed Reality Teleoperation Interface.  </p>
+        <div class="columns is-centered has-text-centered">
+          <div class ="column has-text-justified">
+            <p class="is-bold">Videos demonstrating the two teleoperation approaches:
+            SpaceMouse Teleoperation and a Mixed Reality Teleoperation Interface, and the non-teleoperation approach: Kinesthetic Teaching.  </p>
+          </div>
         </div>
+        
 </section>
 
 <section class="section">
@@ -166,18 +170,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Teleoperation interfaces are increasingly important for enabling intuitive and effective human-robot interaction, yet their performance
-            relative to direct manipulation methods remains underexplored. In this study, we compared two teleoperation approaches—SpaceMouse
-            Teleoperation and a Mixed Reality interface—to a widely used non-teleoperation method, Kinesthetic Teaching. All three approaches
-            were evaluated in a comprehensive user study involving two robotic platforms and six complex manipulation tasks. Quantitative
-            results show that Kinesthetic Teaching outperforms both teleoperation methods, yielding faster task completion times and higher
-            success rates for both novice and expert users. The SpaceMouse and MR interfaces performed comparably, with significant differences
-            in task completion observed for only two tasks, and success rates declining as task complexity increased. Qualitative analysis reflected
-            these trends, highlighting differences in Physical Demand and identifying interface attributes that influence users’ ability to perform,
-            learn, and understand. This study quantifies the limitations of current teleoperation methods and incorporates subjective feedback
-            from 25 participants. The results highlight the critical need to design and rigorously evaluate teleoperation systems for non-expert
-            users, particularly in contexts where autonomous robots are deployed in personal or everyday environments, to ensure usability,
-            efficiency, and accessibility.
+            Teleoperation interfaces are essential tools for enabling human control of robotic systems. Although a wide range of interfaces has
+            been developed, a persistent gap remains between the level of performance humans can achieve through these interfaces and the
+            capabilities afforded by direct human-guided robot control. This gap is further exacerbated when users are inexperienced or unfamiliar
+            with the robotic platform or control interface. In this work, we aim to better characterize this performance gap for non-expert users by
+            comparing two teleoperation approaches—SpaceMouse teleoperation and a Mixed Reality (MR) interface—against kinesthetic teaching
+            as a non-teleoperation baseline. All three approaches were evaluated in a comprehensive user study involving two robotic platforms
+            and six complex manipulation tasks. Quantitative results show that the SpaceMouse and MR interfaces performed comparably, with
+            significant differences in task completion observed for only two tasks, and success rates declining as task complexity increased.
+            Qualitative analysis reflected these trends, highlighting differences in Physical Demand and identifying interface attributes that
+            influence users’ ability to perform, learn, and understand. This study quantifies the limitations of current teleoperation methods
+            and incorporates subjective feedback from 25 participants. The results highlight the critical need to design and rigorously evaluate
+            teleoperation systems for non-expert users, particularly in contexts where autonomous robots are deployed in personal or everyday
+            environments, to ensure usability, efficiency, and accessibility.
           </p>
         </div>
       </div>
@@ -206,8 +211,8 @@
         <h3 class="title is-3">Experimental Design</h3>
         <div class="content has-text-justified">
           <p>
-            We conducted a user study to compare three robot control interfaces:
-              Kinesthetic Teaching, SpaceMouse Teleoperation, and a Mixed Reality Teleoperation Interface.
+            We conducted a user study to compare two teleoperation interfaces:
+              SpaceMouse Teleoperation and a Mixed Reality Teleoperation Interface, and the non-teleoperation approach (for broader robot control contextualization): Kinesthetic Teaching.
               Participants were tasked with completing a series of manipulation tasks
               using each interface, and their performance, workload, and preferences were evaluated.
               We recorded task completion times, success rates, and subjective feedback through questionnaires.
@@ -217,16 +222,19 @@
         <h3 class="title is-4">Hypotheses</h3>
         <div class="content has-text-justified">
           <p>
-            <strong>H1:</strong> Kinesthetic Teaching will result in lower task completion times
-            and lower perceived workload compared to SpaceMouse Teleoperation and Mixed Reality Teleoperation.
+            <strong> Hypothesis 1 – Helping Users Do (SpaceMouse):</strong> The SpaceMouse’s minimal and intuitive design will allow users to control the robot’s end-effector seamlessly,
+             enabling them to execute both large and precise movements with minimal effort. 
+             However, unintuitive input-to-motion mappings may reduce effectiveness in matching user commands to robot movements..
           </p>
           <p>
-            <strong>H2:</strong> Spacemouse Teleoperation will result in the lowest physical workload but comparable task completion times
-            and perceived workload to Mixed Reality Teleoperation.
+            <strong>Hypothesis 2 – Helping Users Understand (Mixed Reality):</strong> Visualizing the end-effector via a mixed reality digital twin will improve users’ ability to anticipate robot movements in response to their inputs, 
+            clarifying the relationship between control actions and robot motion and potentially enhancing task performance. 
+            However, prior experience with AR/VR/MR may influence usability and limit effectiveness.
           </p>
           <p>
-            <strong>H3:</strong> Mixed Reality Teleoperation will be preferred by participants
-            for its intuitive interface and immersive experience.
+            <strong>Hypothesis 3 – Helping Users Learn (Kinesthetic Teaching):</strong> We hypothesize that kinesthetic teaching enables users to implicitly learn the robot’s kinematics—including joint motions, workspace limits, 
+            and potential self-collisions—without explicit instruction, supporting efficient task performance. 
+            However, achieving this performance may require substantial physical effort, potentially limiting comfort and ease of execution.
           </p>
         </div>
       </div>
@@ -239,7 +247,7 @@
     <div class="columns is-centered">
       <!-- Participants -->
       <div class="column">
-        <h2 class="title is-3">Participants</h2>
+        <h2 class="title is-4">Participants</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
@@ -281,7 +289,7 @@
     <div class="columns is-centered">
       <!-- Tasks -->
       <div class="column">
-        <h2 class="title is-3">Tasks</h2>
+        <h2 class="title is-4">Tasks</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
@@ -378,10 +386,10 @@
         <h3 class="title is-4">Time and Success</h3>
         <div class="content has-text-justified">
           <p>
-            Participants completed tasks faster and more successfully using Kinesthetic Teaching
-            compared to SpaceMouse and Mixed Reality Teleoperation. Although overall trends indicate that
+            Although overall trends indicate that
             participants generally completed tasks more quickly using the SpaceMouse compared to the Mixed Reality Interface,
-            statistically significant differences were observed only for the PEG-in-HOLE and RING-on-PEG tasks.
+            statistically significant differences were observed only for the PEG-in-HOLE and RING-on-PEG tasks. Participants completed tasks faster and more successfully using Kinesthetic Teaching
+            compared to SpaceMouse and Mixed Reality Teleoperation.
           </p>
           <p>
             Participants using the SpaceMouse experienced substantial difficulty in tasks
